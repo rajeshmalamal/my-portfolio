@@ -190,7 +190,9 @@
                 grid-template-columns: 1fr;
             }
             body { padding: 1rem; }
-            .sidebar { order: 1; } /* Keeps profile at top on mobile if desired, or switch order */
+	    .sidebar { 
+                order: -1;  /* -1 moves profile card to the TOP. (1 moves it to the bottom) */
+            }
         }
     </style>
 </head>
